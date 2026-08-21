@@ -140,11 +140,11 @@ export default function Home() {
           </p>
         </header>
 
-                {/* STEP 1: UPLOAD */}
+        {/* STEP 1: UPLOAD */}
         {step === "upload" && (
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 text-center">
-            <Upload className="mx-auto h-12 w-12 text-gray-400 mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Upload Operations CSV</h2>
+          <div className="rounded-xl border border-gray-200 bg-white p-8 text-center shadow-sm transition-colors dark:border-gray-800 dark:bg-gray-900">
+            <Upload className="mx-auto h-12 w-12 text-gray-400 dark:text-gray-500 mb-4" />
+            <h2 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Upload Operations CSV</h2>
             
             {/* NEW: Mock Data Download Link */}
             <p className="text-sm text-gray-500 mb-6">
