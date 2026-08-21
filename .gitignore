@@ -3,6 +3,10 @@ venv/
 __pycache__/
 *.csv
 .env
+<<<<<<< HEAD
+=======
+.vscode
+>>>>>>> 068f9b5 (feat: initialize ops-autopilot-frontend with Next.js and Tailwind CSS)
 
 # Next.js
 node_modules/
