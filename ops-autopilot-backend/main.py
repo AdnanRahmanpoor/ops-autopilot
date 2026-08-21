@@ -16,12 +16,18 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), base_url="https://api.deeps
 
 app = FastAPI(title="Ops Autopilot API")
 
+# 1. Explicitly list your local and production domains
+origins = [
+    "http://localhost:3000",       # For local testing
+    "https://ops.adnanrp.com",     # Your live frontend
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Next.js default port
+    allow_origins=origins,          # MUST be an explicit list, NOT ["*"]
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],            # Allows GET, POST, OPTIONS, etc.
+    allow_headers=["*"],            # Allows Content-Type, Authorization, etc.
 )
 
 # In-memory state for the weekend build
