@@ -29,6 +29,33 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
 
+    const downloadMockData = async () => {
+    try {
+      // 1. Fetch the file from the public folder
+      const response = await fetch('/mock_ops_data.csv');
+      if (!response.ok) throw new Error('File not found');
+      
+      // 2. Convert it to a Blob (binary large object)
+      const blob = await response.blob();
+      
+      // 3. Create a temporary URL for the blob
+      const url = window.URL.createObjectURL(blob);
+      
+      // 4. Create a hidden <a> tag and force the download
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'mock_ops_data.csv'); // Forces the filename
+      document.body.appendChild(link);
+      link.click();
+      
+      // 5. Clean up
+      link.parentNode?.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      alert('Failed to download. Please ensure "mock_ops_data.csv" is inside your frontend /public folder.');
+    }
+  };
+
   // Load saved theme
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -150,8 +177,8 @@ export default function Home() {
             <p className="text-sm text-gray-500 mb-6">
               Don't have a dataset?{" "}
               <a 
-                href="/mock_ops_data.csv" 
-                download 
+                href="#"
+                onClick={downloadMockData}
                 className="text-blue-600 hover:text-blue-800 font-semibold underline"
               >
                 Download our Mock Messy CSV
