@@ -18,7 +18,7 @@ app = FastAPI(title="Ops Autopilot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # Next.js default port
+    allow_origins=["https://ops.adnanrp.com"], # Next.js default port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -34,8 +34,11 @@ async def upload_and_profile(file: UploadFile = File(...)):
     if not file.filename.endswith('.csv'):
         raise HTTPException(status_code=400, detail="File must be a CSV")
     
-    # Read CSV into Pandas
-    current_df = pd.read_csv(file.file)
+    # 1. Safely read the file bytes asynchronously
+    contents = await file.read()
+    
+    # 2. Convert bytes to a file-like object for Pandas
+    current_df = pd.read_csv(io.BytesIO(contents))
     
     # DETERMINISTIC PROFILING (No AI yet)
     current_df['last_updated'] = pd.to_datetime(current_df['last_updated'])

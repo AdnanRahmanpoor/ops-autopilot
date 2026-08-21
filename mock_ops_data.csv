@@ -1,0 +1,51 @@
+ticket_id,guest_name,unit_number,issue_description,priority,status,assigned_to,date_reported,last_updated
+TKT-1001,Guest 1,204,Kitchen sink is leaking,Low,Open,,2026-08-20 03:25:38.041171,2026-08-21 01:25:38.041231
+TKT-1002,Guest 2,201,Stains on the carpet,,Open,,2026-08-11 03:25:38.041286,2026-08-20 17:25:38.041301
+TKT-1003,Guest 3,408,Broken window latch,Low,Open,,2026-08-13 03:25:38.041331,2026-08-20 20:25:38.041341
+TKT-1004,Guest 4,407,Need extra towels,Low,Open,,2026-08-15 03:25:38.041370,2026-08-20 21:25:38.041379
+TKT-1005,Guest 5,507,Broken window latch,,Open,,2026-08-13 03:25:38.041416,2026-08-20 20:25:38.041426
+TKT-1006,Guest 6,205,Smart TV won't turn on,Low,Open,,2026-08-13 03:25:38.041452,2026-08-20 16:25:38.041461
+TKT-1007,Guest 7,201,Smart TV won't turn on,,Open,,2026-08-14 03:25:38.041489,2026-08-20 20:25:38.041498
+TKT-1008,Guest 8,304,Stains on the carpet,,Open,,2026-08-12 03:25:38.041522,2026-08-20 16:25:38.041538
+TKT-1009,Guest 9,401,Wi-Fi keeps dropping in the living room,Medium,Open,,2026-08-15 03:25:38.041561,2026-08-15 11:25:38.041561
+TKT-1010,Guest 10,407,Broken window latch,,Open,,2026-08-11 03:25:38.041601,2026-08-20 16:25:38.041611
+TKT-1011,Guest 11,102,Wi-Fi keeps dropping in the living room,,Open,,2026-08-15 03:25:38.041636,2026-08-15 23:25:38.041636
+TKT-1012,Guest 12,106,Broken window latch,,Open,,2026-08-15 03:25:38.041671,2026-08-21 02:25:38.041681
+TKT-1013,Guest 13,203,Broken window latch,,Open,,2026-08-14 03:25:38.041705,2026-08-20 17:25:38.041715
+TKT-1014,Guest 14,403,Broken window latch,,Open,,2026-08-19 03:25:38.041740,2026-08-20 15:25:38.041748
+TKT-1015,Guest 15,303,Smart TV won't turn on,,Open,,2026-08-13 03:25:38.041769,2026-08-20 17:25:38.041777
+TKT-1016,Guest 16,106,Heater is blowing cold air,Low,Open,,2026-08-18 03:25:38.041799,2026-08-20 18:25:38.041807
+TKT-1017,Guest 17,503,Need extra towels,Low,Open,,2026-08-11 03:25:38.041832,2026-08-20 22:25:38.041841
+TKT-1018,Guest 18,209,Heater is blowing cold air,,Open,,2026-08-15 03:25:38.041868,2026-08-21 00:25:38.041876
+TKT-1019,Guest 19,209,Stains on the carpet,Medium,Open,,2026-08-18 03:25:38.041899,2026-08-18 07:25:38.041899
+TKT-1020,Guest 20,404,Kitchen sink is leaking,,Open,,2026-08-19 03:25:38.041932,2026-08-20 19:25:38.041940
+TKT-1021,Guest 21,106,Broken window latch,,Open,,2026-08-13 03:25:38.041966,2026-08-20 22:25:38.041977
+TKT-1022,Guest 22,408,Heater is blowing cold air,Medium,Open,,2026-08-14 03:25:38.042001,2026-08-20 21:25:38.042011
+TKT-1023,Guest 23,301,Heater is blowing cold air,,Open,,2026-08-11 03:25:38.042041,2026-08-11 14:25:38.042041
+TKT-1024,Guest 24,301,AC making a grinding noise,Low,Open,,2026-08-19 03:25:38.042087,2026-08-21 01:25:38.042097
+TKT-1025,Guest 25,303,Need extra towels,Medium,Open,,2026-08-15 03:25:38.042125,2026-08-20 18:25:38.042133
+TKT-1026,Guest 26,208,Wi-Fi keeps dropping in the living room,,Open,,2026-08-11 03:25:38.042158,2026-08-20 15:25:38.042166
+TKT-1027,Guest 27,406,Wi-Fi keeps dropping in the living room,Low,Open,,2026-08-12 03:25:38.042189,2026-08-12 05:25:38.042189
+TKT-1028,Guest 28,205,Wi-Fi keeps dropping in the living room,Medium,Open,,2026-08-17 03:25:38.042223,2026-08-17 06:25:38.042223
+TKT-1029,Guest 29,208,Stains on the carpet,,Open,,2026-08-20 03:25:38.042255,2026-08-21 01:25:38.042263
+TKT-1030,Guest 30,202,AC making a grinding noise,,Open,,2026-08-18 03:25:38.042286,2026-08-18 15:25:38.042286
+TKT-1031,Guest 31,203,Broken window latch,Low,Open,,2026-08-11 03:25:38.042316,2026-08-20 22:25:38.042325
+TKT-1032,Guest 32,106,Heater is blowing cold air,Medium,Open,,2026-08-16 03:25:38.042349,2026-08-20 18:25:38.042358
+TKT-1033,Guest 33,502,Stains on the carpet,Low,Open,,2026-08-18 03:25:38.042385,2026-08-20 20:25:38.042395
+TKT-1034,Guest 34,409,Smart TV won't turn on,Medium,Open,,2026-08-13 03:25:38.042421,2026-08-13 16:25:38.042421
+TKT-1035,Guest 35,508,Broken window latch,Low,Open,,2026-08-14 03:25:38.042458,2026-08-20 21:25:38.042469
+TKT-1036,Guest 36,108,Stains on the carpet,Medium,Open,,2026-08-20 03:25:38.042499,2026-08-20 20:25:38.042520
+TKT-1037,Guest 37,209,Wi-Fi keeps dropping in the living room,Medium,Open,,2026-08-17 03:25:38.042563,2026-08-21 00:25:38.042574
+TKT-1038,Guest 38,302,Broken window latch,,Open,,2026-08-15 03:25:38.042606,2026-08-15 14:25:38.042606
+TKT-1039,Guest 39,206,Broken window latch,,Open,,2026-08-12 03:25:38.042641,2026-08-21 01:25:38.042675
+TKT-1040,Guest 40,307,Kitchen sink is leaking,Low,Open,,2026-08-15 03:25:38.042703,2026-08-16 03:25:38.042703
+TKT-1041,Guest 41,502,Heater is blowing cold air,Low,Open,,2026-08-18 03:25:38.042742,2026-08-18 07:25:38.042742
+TKT-1042,Guest 42,408,Stains on the carpet,Low,Open,,2026-08-12 03:25:38.042778,2026-08-20 15:25:38.042788
+TKT-1043,Guest 43,509,Stains on the carpet,,Open,,2026-08-15 03:25:38.042815,2026-08-20 17:25:38.042825
+TKT-1044,Guest 44,403,Broken window latch,Medium,Open,,2026-08-12 03:25:38.042863,2026-08-20 17:25:38.042874
+TKT-1045,Guest 45,308,Need extra towels,Medium,Open,,2026-08-12 03:25:38.042905,2026-08-20 18:25:38.042916
+TKT-1046,Guest 46,505,Kitchen sink is leaking,,Open,,2026-08-14 03:25:38.042949,2026-08-14 12:25:38.042949
+TKT-1047,Guest 47,406,Kitchen sink is leaking,,Open,,2026-08-19 03:25:38.042987,2026-08-20 20:25:38.042998
+TKT-1048,Guest 48,505,Smart TV won't turn on,Low,Open,,2026-08-11 03:25:38.043023,2026-08-20 16:25:38.043039
+TKT-1049,Guest 49,402,Smart TV won't turn on,Low,Open,,2026-08-13 03:25:38.043071,2026-08-20 20:25:38.043083
+TKT-1050,Guest 50,404,Smart TV won't turn on,Medium,Open,,2026-08-15 03:25:38.043117,2026-08-15 04:25:38.043117

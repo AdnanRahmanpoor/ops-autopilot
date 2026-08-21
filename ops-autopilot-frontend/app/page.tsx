@@ -140,43 +140,39 @@ export default function Home() {
           </p>
         </header>
 
-        {/* STEP 1: UPLOAD */}
+                {/* STEP 1: UPLOAD */}
         {step === "upload" && (
-          <div className="rounded-xl border border-gray-200 bg-white p-8 text-center shadow-sm transition-colors dark:border-gray-800 dark:bg-gray-900">
-            <Upload className="mx-auto mb-4 h-12 w-12 text-gray-400 dark:text-gray-500" />
+          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 text-center">
+            <Upload className="mx-auto h-12 w-12 text-gray-400 mb-4" />
+            <h2 className="text-xl font-semibold mb-2">Upload Operations CSV</h2>
+            
+            {/* NEW: Mock Data Download Link */}
+            <p className="text-sm text-gray-500 mb-6">
+              Don't have a dataset?{" "}
+              <a 
+                href="/mock_ops_data.csv" 
+                download 
+                className="text-blue-600 hover:text-blue-800 font-semibold underline"
+              >
+                Download our Mock Messy CSV
+              </a>
+            </p>
 
-            <h2 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">
-              Upload Operations CSV
-            </h2>
-
-            <input
-              type="file"
-              accept=".csv"
-              onChange={(e) => setFile(e.target.files?.[0] || null)}
-              className="
-                mb-4 block w-full text-sm text-gray-500
-                dark:text-gray-400
-                file:mr-4 file:rounded-full file:border-0
-                file:bg-blue-50 file:px-4 file:py-2
-                file:text-sm file:font-semibold file:text-blue-700
-                hover:file:bg-blue-100
-                dark:file:bg-blue-950 dark:file:text-blue-300
-                dark:hover:file:bg-blue-900
-              "
-            />
-
-            <button
-              onClick={handleUpload}
-              disabled={!file || loading}
-              className="
-                rounded-lg bg-blue-600 px-6 py-2 text-white
-                hover:bg-blue-700
-                disabled:cursor-not-allowed disabled:opacity-50
-                dark:bg-blue-500 dark:hover:bg-blue-600
-              "
-            >
-              {loading ? "Profiling..." : "Upload & Profile Data"}
-            </button>
+            <div className="flex flex-col items-center">
+              <input 
+                type="file" 
+                accept=".csv" 
+                onChange={(e) => setFile(e.target.files?.[0] || null)}
+                className="mb-6 block w-full max-w-sm text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+              />
+              <button 
+                onClick={handleUpload} 
+                disabled={!file || loading}
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 disabled:opacity-50 transition-colors w-full max-w-sm"
+              >
+                {loading ? "Profiling..." : "Upload & Profile Data"}
+              </button>
+            </div>
           </div>
         )}
 
