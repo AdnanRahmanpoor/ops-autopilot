@@ -18,7 +18,7 @@ app = FastAPI(title="Ops Autopilot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://ops.adnanrp.com"], # Next.js default port
+    allow_origins=["*"], # Next.js default port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
